@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Grey_9"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/idTvUserIdTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/user_id"
+                android:textColor="@color/BrandBlack"
+                android:textSize="@dimen/txt_title_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTvUserIdValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toEndOf="@+id/idTvUserIdTitle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/Grey_5"
+                android:textSize="@dimen/txt_desc_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:orientation="vertical"
+            android:layout_marginTop="7dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/idTvIdTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/id"
+                android:textColor="@color/BrandBlack"
+                android:textSize="@dimen/txt_title_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTvIdValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toEndOf="@+id/idTvIdTitle"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/Grey_5"
+                android:textSize="@dimen/txt_desc_size" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/title"
+            android:textColor="@color/BrandBlack"
+            android:textSize="@dimen/txt_title_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idTvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:singleLine="false"
+            android:textColor="@color/Grey_5"
+            android:textSize="@dimen/txt_desc_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/desc"
+            android:textColor="@color/BrandBlack"
+            android:textSize="@dimen/txt_title_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idTvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/Grey_5"
+            android:textSize="@dimen/txt_desc_size" />
+    </LinearLayout>
+
+</RelativeLayout>
